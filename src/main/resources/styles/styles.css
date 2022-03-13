@@ -1,0 +1,350 @@
+.buttons {
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: #88BDBC;
+    -fx-text-fill: #112D32;
+    -fx-border-color: #112D32;
+}
+
+.pageButton {
+    -fx-background-color: #112D32;
+    -fx-text-fill: #88BDBC;
+    -fx-border-color: #88BDBC;
+}
+
+#about {
+    -fx-border-radius: 50px 0px 0px 50px;
+    -fx-background-radius: 50px 0px 0px 50px;
+}
+
+#events {
+    -fx-border-radius: 0px 50px 50px 0px;
+    -fx-background-radius: 0px 50px 50px 0px;
+}
+
+#List1 {
+    -fx-border-radius: 10px 0px 0px 0px;
+    -fx-background-radius: 10px 0px 0px 0px;
+    -fx-border-width: 3 0 0 3;
+    -fx-border-color: #112D32;
+}
+
+#List2 {
+    -fx-border-radius: 0px 10px 0px 0px;
+    -fx-background-radius: 0px 10px 0px 0px;
+    -fx-border-width: 3 3 0 0;
+    -fx-border-color: #112D32;
+}
+
+.backButton {
+    -fx-background-image: url("../icons/reverse.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    /*-fx-border-radius: 50px;*/
+    /*-fx-background-radius: 50px;*/
+}
+
+.send_button{
+    -fx-background-image: url("../icons/send_request.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.search_button {
+    -fx-background-image: url("../icons/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.friends_button {
+    -fx-background-image: url("../icons/friends.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.friend_requests_button {
+    -fx-background-image: url("../icons/friend_requests.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.messages_button {
+    -fx-background-image: url("../icons/messages.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.events_button {
+    -fx-background-image: url("../icons/events.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.reports_button {
+    -fx-background-image: url("../icons/report.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.receive_button{
+    -fx-background-image: url("../icons/receive_request.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.send_message_button{
+    -fx-background-image: url("../icons/send_message.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.icon_button:hover {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-image: none;
+}
+
+.button:hover {
+    -fx-background-color: #DCDCDC;
+}
+
+.profilePicture {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-padding: 10;
+    -fx-background-color: black;
+    -fx-background-radius: 20px;
+}
+
+.no-header .column-header-background {
+    visibility: hidden;
+}
+
+.no-header .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-font-size:14px;
+    -fx-font-weight:bold;
+
+}
+.table-column {
+    -fx-background-color: transparent;
+}
+.table-row-cell {
+    -fx-background-color:transparent;
+}
+
+.table-view .filler {
+    -fx-background-color:transparent;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: steelblue;
+}
+
+.iconPeople {
+    -fx-background-image: url("../icons/participants.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.iconDate {
+    -fx-background-image: url("../icons/date.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.iconLocation {
+    -fx-background-image: url("../icons/location.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.notifications {
+    -fx-background-image: url("../icons/notifications.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+.tableViewPaging .scroll-bar {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.leftButton {
+    -fx-background-image: url("../icons/left_icon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+.rightButton {
+    -fx-background-image: url("../icons/right_icon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.addButton {
+    -fx-background-image: url("../icons/add.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-border-color:  #112D32;
+    -fx-border-width: 3px;
+    -fx-border-radius: 7px 7px 7px 7px;
+}
+
+.table-column{
+    -fx-alignment: center;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #88BDBC, #E0E0E0);
+    -fx-background-radius: 7px 7px 7px 7px;
+}
+
+.side-menu {
+    /*-fx-background-color: #112D32;*/
+    -fx-background-color: #112D32;
+}
+
+.background-app {
+    -fx-background-color: #E0E0E0;
+}
+
+.background-header {
+    -fx-background-color: #88BDBC;
+    -fx-border-color: #112D32;
+}
+
+.list-cell:even {
+
+}
+.list-view {
+    -fx-padding: 1px;
+}
+.list-cell{
+    -fx-border-radius: 20;
+}
+
+.sendMessageChatButton {
+    -fx-background-image: url("../icons/sendMessage.png");
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+.stopReplyChatButton {
+    -fx-background-image: url("../icons/x_icon.png");
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+.list-view .list-cell,
+.list-view .list-cell:filled,
+.list-view .list-cell:focused,
+.list-view .list-cell:hover {
+    -fx-background-color: transparent;
+    -fx-effect: null;
+}
+
+.list-view:focused .list-cell:filled:selected, .list-view:focused .list-cell:filled:selected:hover{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: green;
+}
+
+.list-view:focused .list-cell:filled:focused:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: #090000;
+}
+
+.myList {
+    -fx-background-color: linear-gradient(to bottom, #88BDBC, #E0E0E0);
+}
+
+.list-view .scroll-bar:vertical.myList1{
+    -fx-scale-x: 0;
+}
+.list-view .scroll-bar:horizontal.myList1{
+    -fx-scale-x:0;
+}
+.downloadButton{
+    -fx-background-image: url("../icons/download.png");
+    -fx-background-size: 70px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+.previewButton{
+    -fx-background-image: url("../icons/preview.png");
+    -fx-background-size: 70px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+
+
+

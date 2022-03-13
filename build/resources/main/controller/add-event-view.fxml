@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="551.0" prefWidth="845.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewEventController">
+   <children>
+      <HBox alignment="CENTER" layoutX="43.0" prefHeight="551.0" prefWidth="758.0" spacing="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="346.0" prefWidth="304.0" spacing="15.0" HBox.hgrow="NEVER">
+               <children>
+                  <GridPane maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" styleClass="profilePicture" stylesheets="@../styles/styles.css" VBox.vgrow="NEVER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="image" fitHeight="280.0" fitWidth="280.0" onMouseClicked="#addPhotoOnClick" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../icons/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="551.0" prefWidth="250.0" spacing="40.0" HBox.hgrow="NEVER">
+               <children>
+                  <TextField fx:id="TextFieldName" prefHeight="26.0" prefWidth="175.0" promptText="Event name" />
+                  <TextArea fx:id="TextFieldDescription" prefHeight="106.0" prefWidth="175.0" promptText="Description" />
+                  <TextField fx:id="TextFieldLocation" prefHeight="26.0" prefWidth="175.0" promptText="Location" />
+                  <DatePicker fx:id="TextFieldStartDate" prefHeight="26.0" prefWidth="410.0" promptText="Start date" VBox.vgrow="ALWAYS" />
+                  <DatePicker fx:id="TextFieldEndDate" prefHeight="26.0" prefWidth="426.0" promptText="End date" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="addEventButton" mnemonicParsing="false" onAction="#addOnClick" prefHeight="26.0" prefWidth="418.0" styleClass="buttons" text="Add event" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

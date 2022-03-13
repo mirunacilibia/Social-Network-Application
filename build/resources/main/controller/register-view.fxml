@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="1000.0" maxWidth="2000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="background-app" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterController">
+    <children>
+      <AnchorPane layoutX="-1.0" layoutY="2.0" prefHeight="400.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <Button maxHeight="98.0" maxWidth="241.0" mnemonicParsing="false" onAction="#goBack" prefHeight="42.0" prefWidth="42.0" styleClass="backButton" AnchorPane.bottomAnchor="39.6" AnchorPane.rightAnchor="28.6">
+                  <effect>
+                      <Blend />
+                  </effect>
+              </Button>
+              <Label text="Back" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="35.2">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+              </Label>
+            <Button layoutX="291.0" layoutY="325.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="26.0" prefWidth="208.0" styleClass="buttons" text="Create a new account" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="201.0" />
+            <VBox layoutX="294.0" layoutY="95.0" prefHeight="210.0" prefWidth="202.0" spacing="10.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="203.6" AnchorPane.topAnchor="95.0">
+               <children>
+                      <TextField fx:id="email" prefHeight="26.0" prefWidth="208.0" />
+                  <TextField fx:id="firstName" prefHeight="26.0" prefWidth="208.0" />
+                  <TextField fx:id="lastName" prefHeight="26.0" prefWidth="208.0" />
+                  <TextField fx:id="phoneNumber" prefHeight="26.0" prefWidth="208.0" />
+                  <PasswordField fx:id="password" prefHeight="26.0" prefWidth="208.0" />
+                      <PasswordField fx:id="passwordAgain" prefHeight="26.0" prefWidth="208.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="91.0" layoutY="94.0" prefHeight="212.0" prefWidth="125.0" spacing="18.0" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="406.6" AnchorPane.topAnchor="94.0">
+               <children>
+                      <Label prefHeight="20.0" prefWidth="116.0" text="Email" textFill="#112d32">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="116.0" text="First Name" textFill="#112d32">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="116.0" text="Last Name" textFill="#112d32">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="116.0" text="Phone Number" textFill="#112d32">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="116.0" text="Password " textFill="#112d32">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                      <Label prefHeight="20.0" prefWidth="116.0" text="Password (again)" textFill="#112d32">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="294.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../icons/cat.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

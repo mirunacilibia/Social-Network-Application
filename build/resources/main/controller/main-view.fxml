@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="678.0" prefWidth="1077.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+  <children>
+    <MenuBar prefHeight="27.0" prefWidth="886.0" styleClass="background-header" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false">
+          <items>
+            <MenuItem mnemonicParsing="false" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" stylesheets="@../styles/styles.css" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane maxHeight="1000.0" maxWidth="226.0" prefHeight="678.0" prefWidth="226.0" styleClass="side-menu">
+          <children>
+                  <GridPane layoutX="7.0" layoutY="36.0" prefHeight="90.0" prefWidth="109.0" styleClass="profilePicture" AnchorPane.topAnchor="36.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="180.5999969482422" minHeight="10.0" prefHeight="180.5999969482422" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="profilePicture" fitHeight="78.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="profilePicture" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="54.0" layoutY="137.0" prefHeight="327.0" prefWidth="118.0" AnchorPane.topAnchor="137.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" valignment="BOTTOM" />
+                        <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" valignment="BOTTOM" />
+                        <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" valignment="BASELINE" />
+                    </rowConstraints>
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="66.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#onSearchButton" prefHeight="70.0" prefWidth="70.0" text="Search" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <styleClass>
+                              <String fx:value="search_button" />
+                              <String fx:value="icon_button" />
+                           </styleClass></Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#onMyFriendsButton" prefHeight="70.0" prefWidth="70.0" text="My&#10;Friends" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <styleClass>
+                              <String fx:value="friends_button" />
+                              <String fx:value="icon_button" />
+                           </styleClass></Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#onFriendRequestsButton" prefHeight="70.0" prefWidth="70.0" text="Friend&#10;Requests" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <styleClass>
+                              <String fx:value="friend_requests_button" />
+                              <String fx:value="icon_button" />
+                           </styleClass></Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#onMyMessagesButton" prefHeight="70.0" prefWidth="70.0" text="My &#10;messages" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <styleClass>
+                              <String fx:value="messages_button" />
+                              <String fx:value="icon_button" />
+                           </styleClass></Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="15.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#onEventsButton" prefHeight="70.0" prefWidth="70.0" text="Events" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <styleClass>
+                              <String fx:value="events_button" />
+                              <String fx:value="icon_button" />
+                           </styleClass></Button>
+                        <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#onReportsButtonClick" prefHeight="70.0" prefWidth="70.0" text="Reports" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+                           <styleClass>
+                              <String fx:value="reports_button" />
+                              <String fx:value="icon_button" />
+                           </styleClass></Button>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="logOutButton" layoutX="62.0" layoutY="609.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="118.0" styleClass="buttons" text="Log out" AnchorPane.topAnchor="609.0" />
+                  <GridPane layoutX="122.0" layoutY="14.0" prefHeight="112.0" prefWidth="100.0" AnchorPane.topAnchor="24.99999999999997">
+                    <columnConstraints>
+                      <ColumnConstraints />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="93.60000610351562" minHeight="48.00000762939453" prefHeight="76.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="82.39999237060547" minHeight="10.0" prefHeight="54.400000000000006" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="notifications" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" onMouseClicked="#seenNotifications" prefHeight="50.0" prefWidth="50.0" styleClass="notifications" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#onMyAccountButton" prefHeight="32.0" prefWidth="100.0" styleClass="buttons" text="My account" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <ImageView fx:id="newNotifications" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                           <image>
+                              <Image url="@../icons/new.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="25.0" top="6.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/cat.png" />
+                     </image>
+                  </ImageView>
+          </children>
+        </AnchorPane>
+        <AnchorPane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="551.0" minWidth="800.0" prefHeight="651.0" prefWidth="845.0" styleClass="background-app">
+               <children>
+                  <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="658.0" prefWidth="844.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</VBox>

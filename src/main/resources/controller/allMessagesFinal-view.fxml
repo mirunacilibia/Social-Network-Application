@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="845.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MessagesController">
+    <children>
+      <AnchorPane layoutX="-1.0" layoutY="-2.0" prefHeight="486.0" prefWidth="845.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="64.0" layoutY="60.0" prefHeight="415.0" prefWidth="712.0" AnchorPane.bottomAnchor="-5.199999999999989" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="60.0">
+               <children>
+                    <TableView fx:id="tableViewMessages" prefHeight="405.0" prefWidth="712.0">
+                        <columns>
+                        <TableColumn fx:id="tableColumnPhoto" prefWidth="174.39998626708984" text="Picture" />
+                            <TableColumn fx:id="tableColumnName" prefWidth="273.6000061035156" text="Name" />
+                            <TableColumn fx:id="tableColumnMessage" prefWidth="256.800048828125" text="Messages" />
+                        </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                    </TableView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

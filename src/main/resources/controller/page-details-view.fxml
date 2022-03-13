@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="280.0" prefWidth="625.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PageDetailsController">
+   <children>
+      <VBox fx:id="detailsPane" alignment="CENTER" prefHeight="280.0" prefWidth="626.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+             <GridPane>
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="80.0" prefWidth="83.20001220703125" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                 <children>
+                     <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                         <image>
+                             <Image url="@../icons/person.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                         <image>
+                             <Image url="@../icons/email.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                         <image>
+                             <Image url="@../icons/phone.png" />
+                         </image>
+                     </ImageView>
+                     <Label text="NAME: " GridPane.columnIndex="1">
+                         <font>
+                             <Font name="System Bold" size="18.0" />
+                         </font>
+                     </Label>
+                     <Label layoutX="90.0" layoutY="36.0" text="EMAIL:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                         <font>
+                             <Font name="System Bold" size="18.0" />
+                         </font>
+                     </Label>
+                     <Label layoutX="90.0" layoutY="116.0" text="PHONE:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                         <font>
+                             <Font name="System Bold" size="18.0" />
+                         </font>
+                     </Label>
+                     <Label fx:id="labelNameDetails" text="Label" GridPane.columnIndex="3" GridPane.halignment="LEFT">
+                         <font>
+                             <Font size="18.0" />
+                         </font>
+                     </Label>
+                     <Label fx:id="labelEmail" layoutX="174.0" layoutY="36.0" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                         <font>
+                             <Font size="18.0" />
+                         </font>
+                     </Label>
+                     <Label fx:id="labelPhone" layoutX="174.0" layoutY="116.0" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                         <font>
+                             <Font size="18.0" />
+                         </font>
+                     </Label>
+                 </children>
+             </GridPane>
+         </children>
+      </VBox>
+       <TableView fx:id="tableViewEvents" layoutX="-1.0" layoutY="25.0" prefHeight="257.0" prefWidth="626.0" AnchorPane.bottomAnchor="0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+           <columns>
+               <TableColumn fx:id="tableColumnPhoto" minWidth="100.0" prefWidth="187.19995725154877" text="Photo" />
+               <TableColumn fx:id="tableColumnName" minWidth="100.0" prefWidth="154.39996337890625" text="Name" />
+               <TableColumn fx:id="tableColumnStartDate" minWidth="100.0" prefWidth="144.00006103515625" text="Start Date" />
+               <TableColumn fx:id="tableColumnEndDate" minWidth="100.0" prefWidth="139.19992065429688" text="End Date" />
+           </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+       </TableView>
+      <TableView fx:id="tableViewFriends" layoutX="-1.0" layoutY="25.0" prefHeight="257.0" prefWidth="626.0" AnchorPane.bottomAnchor="0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="tableColumnProfilePhoto" prefWidth="187.19995725154877" text="Photo" />
+          <TableColumn fx:id="tableColumnFirstName" prefWidth="154.39996337890625" text="First Name" />
+            <TableColumn fx:id="tableColumnLastName" prefWidth="157.5999755859375" text="Last Name" />
+            <TableColumn fx:id="tableColumnEmail" prefWidth="124.80001831054688" text="Email" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
