@@ -1,10 +1,10 @@
-<h4>
-Social Network application created for the Methods of advanced programming class.
 
-Project was made in a team of 2, with colleague Adela-Nicoleta Ciocoiu.
-</h4>
+## Social Network application created for the Advanced Programming Methods class.
+### Project was made in a team of 2, with colleague Adela-Nicoleta Ciocoiu.
+### Techonologies used: Java, JavaFX, CSS
 
-<h3>The Social Network ADMIR has the following functionalities:<h3>
+-----
+<h4>The Social Network ADMIR has the following functionalities:<h4>
 
 <ul>
   
